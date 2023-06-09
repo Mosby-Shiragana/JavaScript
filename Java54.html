@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After</title>
+</head>
+<body>
+    <script>
+         let inputType=prompt("Enter '1' if text type ;'2' for button type or '3' for type radio");
+        if (inputType=='1')
+            document.write('<input type="text">')
+                else if (inputType=='2')
+                document.write('<input type="button">')
+                    else if (inputType=='3')
+                    document.write('<input type="radio">')
+                        else{
+                            alert("Write a correct type");
+                            exit;
+                    }let kolvo=prompt("Write a number of required types");kolvo=parseInt(kolvo);for (let i=1;i<=kolvo;i++)
+                    if (inputType=='1')
+                    document.write('<input type="text">')
+                    else if(inputType=='2')
+                    document.write('<input type="button">')
+                    else if(inputType=='3')
+                    document.write('<input type="radio">');
+    </script>
+</body>
+</html>

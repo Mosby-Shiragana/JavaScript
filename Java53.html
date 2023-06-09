@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-live</title>
+</head>
+<body>
+    <script>
+        let listType=prompt("Enter '1' if you need numbered list and '2' if you need marked list ");
+        if (listType=='1')
+            document.write("<ol>")
+                else if (listType=='2')
+                document.write("<ul>")
+                    else{
+                        alert("Write a correct type");
+                        exit;
+                    }let kolvo=prompt("Write a number of rows");kolvo=parseInt(kolvo);for (let i=1;i<=kolvo;i++)
+                    document.write("<li></li>");if (listType=='1')
+                    document.write("</ol>")
+                    else if(listType=='2')
+                    document.write("</ul>");
+    </script>
+</body>
+</html>
